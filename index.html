@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="score-board">
+      <h3>Your Score: <span id="playerScore">0</span></h3>
+      <h3>Round: <span id="round">0</span></h3>
+      <h3>Opponent Score: <span id="computerScore">0</span></h3>
+    </div>
+
+    <div class="game-container">
+      <div class="your-choice">
+        <h3>Your Choice</h3>
+        <span id="playerChoice"></span>
+      </div>
+      <div class="game-result">
+        <h3 class="result-text" id="result"></h3>
+      </div>
+      <div class="opponent-choice">
+        <h3>Opponent Choice</h3>
+        <span id="computerChoice"></span>
+      </div>
+    </div>
+    <h1 class="choise">Select your Choice</h1>
+    <div class="button-container">
+      <button class="btn" id="rock">
+        <img src="./asset/fist.png" alt="" style="height: 20px; width: 20px" />
+        <h6>Rock</h6>
+      </button>
+      <button class="btn" id="paper">
+        <img
+          src="./asset/hand-paper.png"
+          alt=""
+          style="height: 20px; width: 20px"
+        />
+        <h6>Paper</h6>
+      </button>
+      <button class="btn" id="scissors">
+        <img
+          src="./asset/scissors.png"
+          alt=""
+          style="height: 20px; width: 20px"
+        />
+        <h6>Scissors</h6>
+      </button>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

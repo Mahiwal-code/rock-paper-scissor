@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", serif;
+}
+.score-board {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-top: 30px;
+}
+.game-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  border-color: darkcyan;
+  background-color: rgb(146, 141, 134);
+  opacity: 0.8;
+
+  box-shadow: 1px 1px 10px black;
+  border: 10px;
+}
+.opponent-choice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+  width: 30%;
+}
+#computerChoice {
+  padding-top: 10%;
+  color: yellow;
+}
+.game-result {
+  margin-top: 10%;
+  margin-left: 4%;
+  height: 30%;
+  width: 30%;
+  color: rgb(206, 255, 133);
+}
+.your-choice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+  width: 30%;
+}
+#playerChoice {
+  padding-top: 10%;
+  color: yellow;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: aquamarine;
+  background-image: url(./asset/rock-paper-scissors.png);
+  background-repeat: no-repeat;
+  background-size: cover; /* Optional: Makes the image cover the entire screen */
+  background-position: center; /* Optional: Centers the image */
+  background-size: 30%;
+  /* background-size: contain; */
+  /* opacity: 0.5; */
+}
+.btn {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 10px black;
+
+  border: none;
+  background: radial-gradient(
+    circle,
+    rgba(254, 203, 155, 0.888),
+    rgba(85, 221, 239, 0.84)
+  );
+  transition: all 0.5s;
+}
+.choice {
+  margin-top: 2%;
+}
+.btn:hover {
+  padding-bottom: 10px;
+  background-color: rgb(255, 199, 132);
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  height: 10%;
+  width: 20%;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
